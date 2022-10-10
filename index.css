@@ -1,0 +1,131 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  :root {
+    --grey: #eee;
+    --darkGrey: #c1bfbf;
+    --black: #000000;
+    --orange: #ffa500;
+    --gold: #f1c40f;
+    --gold: #f1c40f;
+  
+    --fz-sm: 0.875rem;
+    --fz-med: 1rem;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: var(--fz-sm);
+    color: var(--black);
+    line-height: 1.4;
+    background-color: var(--grey);
+  }
+  
+  @media (min-width: 40rem) {
+    body {
+      font-size: var(--fz-med);
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  @media (min-width: 40rem) {
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 100px;
+    }
+  }
+  
+  .logo-img {
+    width: 200px;
+  }
+  
+  @media (min-width: 40rem) {
+    .logo-img {
+      width: 300px;
+    }
+  }
+  
+  .nav {
+    padding-top: 1rem;
+  }
+  
+  @media (min-width: 40rem) {
+    .nav {
+      padding-top: 0;
+    }
+  }
+  
+  .nav a {
+    display: inline-block;
+    transition: color 150ms;
+  }
+  
+  .nav a:hover {
+    color: var(--orange);
+  }
+  
+  .nav a:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+  
+  @media (min-width: 40rem) {
+    .nav a:not(:last-child) {
+      margin-right: 6rem;
+    }
+  }
+  
+  .hero h1 {
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .email {
+    width: 100%;
+    max-width: 275px;
+    padding: 5px;
+  }
+  
+  .submit {
+    width: 100%;
+    max-width: 150px;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: var(--gold);
+    transition: background-color 150ms;
+  }
+  
+  .submit:hover {
+    background-color: var(--orange);
+  }
