@@ -24,7 +24,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: var(--fz-sm);
   color: var(--black);
@@ -155,7 +155,7 @@ a {
 .fa,
 .far,
 .fas {
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
 }
 
 .fa-3x {
@@ -204,4 +204,51 @@ p {
 #how-it-works > iframe {
   max-width: 560px;
   width: 100%;
+}
+
+.packages-grid {
+  padding: 2.5rem 1rem;
+}
+@media (min-width: 40rem) {
+  .packages-grid {
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+
+.package {
+  margin: auto;
+  width: 100%;
+  max-width: 310px;
+  border: solid 1px var(--black);
+  border-radius: 2px;
+  text-align: center;
+}
+@media (min-width: 40rem) {
+  .package {
+    margin: 0;
+  }
+}
+
+.package div {
+  padding: 1em 0;
+  background-color: var(--darkGrey);
+}
+
+.package li {
+  list-style: none;
+  margin-top: 0.75em;
+}
+
+.package button {
+  border: none;
+  background-color: var(--gold);
+  padding: 0.5rem 1rem;
+  margin: 1.5rem 0;
+  font-size: 1.5em;
+  font-weight: 300;
+  border-radius: 3px;
 }
